@@ -1,3 +1,7 @@
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["main"], {
@@ -47,7 +51,47 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "\r\n<!DOCTYPE html>\r\n<html>\r\n<head>\r\n<title>Mywork</title>\r\n</head>\r\n<body>\r\n\r\n<h1>Mywork</h1>\r\n<p>This is a paragraph.</p>\r\n\r\n</body>\r\n</html>";
+    __webpack_exports__["default"] = "<app-header></app-header>\r\n<app-search-result></app-search-result>\r\n";
+    /***/
+  },
+
+  /***/
+  "./node_modules/raw-loader/dist/cjs.js!./src/app/header/header.component.html":
+  /*!************************************************************************************!*\
+    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/header/header.component.html ***!
+    \************************************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function node_modulesRawLoaderDistCjsJsSrcAppHeaderHeaderComponentHtml(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "<nav>\n  <div class=\"container\">\n    <form>\n      <div class=\"row\">\n        <div class=\"col-lg-5 col-sm-12\">\n          <select name=\"cars\" class=\"custom-select\">\n            <option selected>Sort By Name</option>\n            <option>Name (A - Z)</option>\n            <option>Name (Z - A)</option>\n            <option>Rank ↑</option>\n            <option>Rank ↓</option>\n          </select>\n        </div>\n        <div class=\"col-lg-7 col-sm-12\">\n          <input type=\"text\" class=\"form-control\" placeholder=\"Search\">\n        </div>\n      </div>\n    </form>\n  </div>\n</nav>\n";
+    /***/
+  },
+
+  /***/
+  "./node_modules/raw-loader/dist/cjs.js!./src/app/search-result/search-result.component.html":
+  /*!**************************************************************************************************!*\
+    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/search-result/search-result.component.html ***!
+    \**************************************************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function node_modulesRawLoaderDistCjsJsSrcAppSearchResultSearchResultComponentHtml(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "<div class=\"container\">\n    <div class=\"row\">\n        <div class=\"col-sm-12 result-count\">\n            Total Result : \n        </div>\n    </div>\n\n    <div class=\"row profile-list\">\n        <div class=\"col-sm-12 col-lg-3 profile-pic\">\n           <!-- <img src=\"profile.jpg\"> -->\n         </div>\n         <div class=\"col-sm-12 col-lg-6\">\n            <div class=\"profile-name\">dfs</div>\n            <div class=\"profil-url\">dfs</div>\n            <div class=\"profile-info\">\n                <div>\n                <span></span>:\n                <span></span>\n               </div>\n            </div>\n        </div>\n        <div class=\"col-sm-12 col-lg-3\">\n            <button type=\"button\" class=\"btn btn-default\">Details</button>\n        </div>\n    </div>\n\n</div>\n";
     /***/
   },
 
@@ -723,6 +767,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
       /*! raw-loader!./app.component.html */
       "./node_modules/raw-loader/dist/cjs.js!./src/app/app.component.html")).default,
+      encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewEncapsulation"].None,
       styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
       /*! ./app.component.scss */
       "./src/app/app.component.scss")).default]
@@ -779,17 +824,187 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var _app_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
     /*! ./app.component */
     "./src/app/app.component.ts");
+    /* harmony import */
+
+
+    var _header_header_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    /*! ./header/header.component */
+    "./src/app/header/header.component.ts");
+    /* harmony import */
+
+
+    var _search_result_search_result_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+    /*! ./search-result/search-result.component */
+    "./src/app/search-result/search-result.component.ts");
 
     var AppModule = function AppModule() {
       _classCallCheck(this, AppModule);
     };
 
     AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
-      declarations: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]],
+      declarations: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"], _header_header_component__WEBPACK_IMPORTED_MODULE_5__["HeaderComponent"], _search_result_search_result_component__WEBPACK_IMPORTED_MODULE_6__["SearchResultComponent"]],
       imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_3__["AppRoutingModule"]],
       providers: [],
       bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]]
     })], AppModule);
+    /***/
+  },
+
+  /***/
+  "./src/app/header/header.component.scss":
+  /*!**********************************************!*\
+    !*** ./src/app/header/header.component.scss ***!
+    \**********************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function srcAppHeaderHeaderComponentScss(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "nav {\n  background: #147abb;\n  padding: 15px;\n  margin-bottom: 15px;\n}\nnav .form-control {\n  background: #fffef9;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvaGVhZGVyL0Y6XFxnaXRodWJcXHdvcmtzcGFjZS9zcmNcXGFwcFxcaGVhZGVyXFxoZWFkZXIuY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL2hlYWRlci9oZWFkZXIuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxtQkFBQTtFQUNBLGFBQUE7RUFDQSxtQkFBQTtBQ0NKO0FEQUk7RUFFQSxtQkFBQTtBQ0NKIiwiZmlsZSI6InNyYy9hcHAvaGVhZGVyL2hlYWRlci5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIm5hdntcclxuICAgIGJhY2tncm91bmQ6IzE0N2FiYjtcclxuICAgIHBhZGRpbmc6MTVweDtcclxuICAgIG1hcmdpbi1ib3R0b206MTVweDtcclxuICAgIC5mb3JtLWNvbnRyb2xcclxue1xyXG4gICAgYmFja2dyb3VuZDojZmZmZWY5O1xyXG59XHJcbn1cclxuIiwibmF2IHtcbiAgYmFja2dyb3VuZDogIzE0N2FiYjtcbiAgcGFkZGluZzogMTVweDtcbiAgbWFyZ2luLWJvdHRvbTogMTVweDtcbn1cbm5hdiAuZm9ybS1jb250cm9sIHtcbiAgYmFja2dyb3VuZDogI2ZmZmVmOTtcbn0iXX0= */";
+    /***/
+  },
+
+  /***/
+  "./src/app/header/header.component.ts":
+  /*!********************************************!*\
+    !*** ./src/app/header/header.component.ts ***!
+    \********************************************/
+
+  /*! exports provided: HeaderComponent */
+
+  /***/
+  function srcAppHeaderHeaderComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "HeaderComponent", function () {
+      return HeaderComponent;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+
+    var HeaderComponent =
+    /*#__PURE__*/
+    function () {
+      function HeaderComponent() {
+        _classCallCheck(this, HeaderComponent);
+      }
+
+      _createClass(HeaderComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {}
+      }]);
+
+      return HeaderComponent;
+    }();
+
+    HeaderComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+      selector: 'app-header',
+      template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! raw-loader!./header.component.html */
+      "./node_modules/raw-loader/dist/cjs.js!./src/app/header/header.component.html")).default,
+      styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! ./header.component.scss */
+      "./src/app/header/header.component.scss")).default]
+    })], HeaderComponent);
+    /***/
+  },
+
+  /***/
+  "./src/app/search-result/search-result.component.scss":
+  /*!************************************************************!*\
+    !*** ./src/app/search-result/search-result.component.scss ***!
+    \************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function srcAppSearchResultSearchResultComponentScss(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = ".profile-list {\n  background: #fff;\n  border-radius: 3px;\n  box-shadow: 1px 1px 1px #d8d8d8;\n}\n.profile-list .profile-pic {\n  border-radius: 50%;\n  background: #ccc;\n}\n.result-count {\n  margin-bottom: 15px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvc2VhcmNoLXJlc3VsdC9GOlxcZ2l0aHViXFx3b3Jrc3BhY2Uvc3JjXFxhcHBcXHNlYXJjaC1yZXN1bHRcXHNlYXJjaC1yZXN1bHQuY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL3NlYXJjaC1yZXN1bHQvc2VhcmNoLXJlc3VsdC5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJLGdCQUFBO0VBQ0Esa0JBQUE7RUFDQSwrQkFBQTtBQ0NKO0FEQUk7RUFDSSxrQkFBQTtFQUNBLGdCQUFBO0FDRVI7QURDQTtFQUNJLG1CQUFBO0FDRUoiLCJmaWxlIjoic3JjL2FwcC9zZWFyY2gtcmVzdWx0L3NlYXJjaC1yZXN1bHQuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIucHJvZmlsZS1saXN0e1xyXG4gICAgYmFja2dyb3VuZDojZmZmO1xyXG4gICAgYm9yZGVyLXJhZGl1czozcHg7XHJcbiAgICBib3gtc2hhZG93OiAxcHggMXB4IDFweCAjZDhkOGQ4O1xyXG4gICAgLnByb2ZpbGUtcGlje1xyXG4gICAgICAgIGJvcmRlci1yYWRpdXM6NTAlO1xyXG4gICAgICAgIGJhY2tncm91bmQ6I2NjYztcclxuICAgIH1cclxufVxyXG4ucmVzdWx0LWNvdW50e1xyXG4gICAgbWFyZ2luLWJvdHRvbToxNXB4O1xyXG59IiwiLnByb2ZpbGUtbGlzdCB7XG4gIGJhY2tncm91bmQ6ICNmZmY7XG4gIGJvcmRlci1yYWRpdXM6IDNweDtcbiAgYm94LXNoYWRvdzogMXB4IDFweCAxcHggI2Q4ZDhkODtcbn1cbi5wcm9maWxlLWxpc3QgLnByb2ZpbGUtcGljIHtcbiAgYm9yZGVyLXJhZGl1czogNTAlO1xuICBiYWNrZ3JvdW5kOiAjY2NjO1xufVxuXG4ucmVzdWx0LWNvdW50IHtcbiAgbWFyZ2luLWJvdHRvbTogMTVweDtcbn0iXX0= */";
+    /***/
+  },
+
+  /***/
+  "./src/app/search-result/search-result.component.ts":
+  /*!**********************************************************!*\
+    !*** ./src/app/search-result/search-result.component.ts ***!
+    \**********************************************************/
+
+  /*! exports provided: SearchResultComponent */
+
+  /***/
+  function srcAppSearchResultSearchResultComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "SearchResultComponent", function () {
+      return SearchResultComponent;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+
+    var SearchResultComponent =
+    /*#__PURE__*/
+    function () {
+      function SearchResultComponent() {
+        _classCallCheck(this, SearchResultComponent);
+      }
+
+      _createClass(SearchResultComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {}
+      }]);
+
+      return SearchResultComponent;
+    }();
+
+    SearchResultComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+      selector: 'app-search-result',
+      template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! raw-loader!./search-result.component.html */
+      "./node_modules/raw-loader/dist/cjs.js!./src/app/search-result/search-result.component.html")).default,
+      styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! ./search-result.component.scss */
+      "./src/app/search-result/search-result.component.scss")).default]
+    })], SearchResultComponent);
     /***/
   },
 
