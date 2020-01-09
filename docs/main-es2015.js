@@ -58,7 +58,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"container\">\n    <div class=\"row\">\n        <div class=\"col-sm-12 result-count\">\n            Total Result : \n        </div>\n    </div>\n\n    <div class=\"row profile-list\">\n        <div class=\"col-sm-12 col-lg-3 profile-pic\">\n           <!-- <img src=\"profile.jpg\"> -->\n         </div>\n         <div class=\"col-sm-12 col-lg-6\">\n            <div class=\"profile-name\">dfs</div>\n            <div class=\"profil-url\">dfs</div>\n            <div class=\"profile-info\">\n                <div>\n                <span></span>:\n                <span></span>\n               </div>\n            </div>\n        </div>\n        <div class=\"col-sm-12 col-lg-3\">\n            <button type=\"button\" class=\"btn btn-default\">Details</button>\n        </div>\n    </div>\n\n</div>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"container\">\n    <div class=\"row\">\n        <div class=\"col-sm-12 result-count\">\n            Total Result : {{userlist.total_count}}\n        </div>\n    </div>\n\n    <div *ngFor=\"let user of userlist.items\" class=\"row profile-list\">\n        <div class=\"col-sm-12 col-lg-9\">\n            <div class=\"profile-pic\">\n               <img src=\"{{user.avatar_url}}\">\n            </div>\n            \n            <div class=\"profile-info\">\n            <div class=\"profile-name\">{{user.login}}</div>\n            <div class=\"profil-url\">Profile Url: {{user.html_url}}</div>\n           \n        </div>\n        </div>\n        <div class=\"col-sm-12 col-lg-3\">\n            <button type=\"button\" class=\"btn btn-default\">Details</button>\n        </div>\n    </div>\n\n</div>\n");
 
 /***/ }),
 
@@ -383,6 +383,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
 /* harmony import */ var _header_header_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./header/header.component */ "./src/app/header/header.component.ts");
 /* harmony import */ var _search_result_search_result_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./search-result/search-result.component */ "./src/app/search-result/search-result.component.ts");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
+/* harmony import */ var _services_api_service_service__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./services/api-service.service */ "./src/app/services/api-service.service.ts");
+
+
 
 
 
@@ -401,9 +405,10 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         ],
         imports: [
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
-            _app_routing_module__WEBPACK_IMPORTED_MODULE_3__["AppRoutingModule"]
+            _app_routing_module__WEBPACK_IMPORTED_MODULE_3__["AppRoutingModule"],
+            _angular_common_http__WEBPACK_IMPORTED_MODULE_7__["HttpClientModule"]
         ],
-        providers: [],
+        providers: [_services_api_service_service__WEBPACK_IMPORTED_MODULE_8__["ApiService"]],
         bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]]
     })
 ], AppModule);
@@ -465,7 +470,7 @@ HeaderComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (".profile-list {\n  background: #fff;\n  border-radius: 3px;\n  box-shadow: 1px 1px 1px #d8d8d8;\n}\n.profile-list .profile-pic {\n  border-radius: 50%;\n  background: #ccc;\n}\n.result-count {\n  margin-bottom: 15px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvc2VhcmNoLXJlc3VsdC9GOlxcZ2l0aHViXFx3b3Jrc3BhY2Uvc3JjXFxhcHBcXHNlYXJjaC1yZXN1bHRcXHNlYXJjaC1yZXN1bHQuY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL3NlYXJjaC1yZXN1bHQvc2VhcmNoLXJlc3VsdC5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJLGdCQUFBO0VBQ0Esa0JBQUE7RUFDQSwrQkFBQTtBQ0NKO0FEQUk7RUFDSSxrQkFBQTtFQUNBLGdCQUFBO0FDRVI7QURDQTtFQUNJLG1CQUFBO0FDRUoiLCJmaWxlIjoic3JjL2FwcC9zZWFyY2gtcmVzdWx0L3NlYXJjaC1yZXN1bHQuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIucHJvZmlsZS1saXN0e1xyXG4gICAgYmFja2dyb3VuZDojZmZmO1xyXG4gICAgYm9yZGVyLXJhZGl1czozcHg7XHJcbiAgICBib3gtc2hhZG93OiAxcHggMXB4IDFweCAjZDhkOGQ4O1xyXG4gICAgLnByb2ZpbGUtcGlje1xyXG4gICAgICAgIGJvcmRlci1yYWRpdXM6NTAlO1xyXG4gICAgICAgIGJhY2tncm91bmQ6I2NjYztcclxuICAgIH1cclxufVxyXG4ucmVzdWx0LWNvdW50e1xyXG4gICAgbWFyZ2luLWJvdHRvbToxNXB4O1xyXG59IiwiLnByb2ZpbGUtbGlzdCB7XG4gIGJhY2tncm91bmQ6ICNmZmY7XG4gIGJvcmRlci1yYWRpdXM6IDNweDtcbiAgYm94LXNoYWRvdzogMXB4IDFweCAxcHggI2Q4ZDhkODtcbn1cbi5wcm9maWxlLWxpc3QgLnByb2ZpbGUtcGljIHtcbiAgYm9yZGVyLXJhZGl1czogNTAlO1xuICBiYWNrZ3JvdW5kOiAjY2NjO1xufVxuXG4ucmVzdWx0LWNvdW50IHtcbiAgbWFyZ2luLWJvdHRvbTogMTVweDtcbn0iXX0= */");
+/* harmony default export */ __webpack_exports__["default"] = (".profile-list {\n  background: #fff;\n  border-radius: 5px;\n  box-shadow: 1px 1px 1px #d8d8d8;\n  margin-bottom: 15px;\n}\n.profile-list .profile-pic {\n  border-radius: 50%;\n  background: #ccc;\n  width: 100px;\n  height: 100px;\n  float: left;\n  margin: 15px 15px 15px 0;\n  overflow: hidden;\n}\n.profile-list .profile-pic img {\n  width: 100%;\n}\n.profile-list .profile-info {\n  margin-top: 15px;\n}\n.profile-list .profile-info .profile-name {\n  font-size: 18px;\n}\n.result-count {\n  margin-bottom: 15px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvc2VhcmNoLXJlc3VsdC9GOlxcZ2l0aHViXFx3b3Jrc3BhY2Uvc3JjXFxhcHBcXHNlYXJjaC1yZXN1bHRcXHNlYXJjaC1yZXN1bHQuY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL3NlYXJjaC1yZXN1bHQvc2VhcmNoLXJlc3VsdC5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJLGdCQUFBO0VBQ0Esa0JBQUE7RUFDQSwrQkFBQTtFQUNBLG1CQUFBO0FDQ0o7QURBSTtFQUNJLGtCQUFBO0VBQ0EsZ0JBQUE7RUFDQSxZQUFBO0VBQ0EsYUFBQTtFQUNBLFdBQUE7RUFDQSx3QkFBQTtFQUNBLGdCQUFBO0FDRVI7QUREUTtFQUNJLFdBQUE7QUNHWjtBREFJO0VBQ0ksZ0JBQUE7QUNFUjtBRERRO0VBQ0ksZUFBQTtBQ0daO0FEQ0E7RUFDSSxtQkFBQTtBQ0VKIiwiZmlsZSI6InNyYy9hcHAvc2VhcmNoLXJlc3VsdC9zZWFyY2gtcmVzdWx0LmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnByb2ZpbGUtbGlzdHtcclxuICAgIGJhY2tncm91bmQ6I2ZmZjtcclxuICAgIGJvcmRlci1yYWRpdXM6NXB4O1xyXG4gICAgYm94LXNoYWRvdzogMXB4IDFweCAxcHggI2Q4ZDhkODtcclxuICAgIG1hcmdpbi1ib3R0b206MTVweDtcclxuICAgIC5wcm9maWxlLXBpY3tcclxuICAgICAgICBib3JkZXItcmFkaXVzOjUwJTtcclxuICAgICAgICBiYWNrZ3JvdW5kOiNjY2M7XHJcbiAgICAgICAgd2lkdGg6MTAwcHg7XHJcbiAgICAgICAgaGVpZ2h0OjEwMHB4O1xyXG4gICAgICAgIGZsb2F0OmxlZnQ7XHJcbiAgICAgICAgbWFyZ2luOjE1cHggMTVweCAxNXB4IDA7XHJcbiAgICAgICAgb3ZlcmZsb3c6IGhpZGRlbjtcclxuICAgICAgICBpbWd7XHJcbiAgICAgICAgICAgIHdpZHRoOjEwMCU7XHJcbiAgICAgICAgfVxyXG4gICAgfVxyXG4gICAgLnByb2ZpbGUtaW5mb3tcclxuICAgICAgICBtYXJnaW4tdG9wOjE1cHg7XHJcbiAgICAgICAgLnByb2ZpbGUtbmFtZXtcclxuICAgICAgICAgICAgZm9udC1zaXplOjE4cHg7XHJcbiAgICAgICAgfVxyXG4gICAgfVxyXG59XHJcbi5yZXN1bHQtY291bnR7XHJcbiAgICBtYXJnaW4tYm90dG9tOjE1cHg7XHJcbn0iLCIucHJvZmlsZS1saXN0IHtcbiAgYmFja2dyb3VuZDogI2ZmZjtcbiAgYm9yZGVyLXJhZGl1czogNXB4O1xuICBib3gtc2hhZG93OiAxcHggMXB4IDFweCAjZDhkOGQ4O1xuICBtYXJnaW4tYm90dG9tOiAxNXB4O1xufVxuLnByb2ZpbGUtbGlzdCAucHJvZmlsZS1waWMge1xuICBib3JkZXItcmFkaXVzOiA1MCU7XG4gIGJhY2tncm91bmQ6ICNjY2M7XG4gIHdpZHRoOiAxMDBweDtcbiAgaGVpZ2h0OiAxMDBweDtcbiAgZmxvYXQ6IGxlZnQ7XG4gIG1hcmdpbjogMTVweCAxNXB4IDE1cHggMDtcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcbn1cbi5wcm9maWxlLWxpc3QgLnByb2ZpbGUtcGljIGltZyB7XG4gIHdpZHRoOiAxMDAlO1xufVxuLnByb2ZpbGUtbGlzdCAucHJvZmlsZS1pbmZvIHtcbiAgbWFyZ2luLXRvcDogMTVweDtcbn1cbi5wcm9maWxlLWxpc3QgLnByb2ZpbGUtaW5mbyAucHJvZmlsZS1uYW1lIHtcbiAgZm9udC1zaXplOiAxOHB4O1xufVxuXG4ucmVzdWx0LWNvdW50IHtcbiAgbWFyZ2luLWJvdHRvbTogMTVweDtcbn0iXX0= */");
 
 /***/ }),
 
@@ -481,13 +486,25 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SearchResultComponent", function() { return SearchResultComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _services_api_service_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../services/api-service.service */ "./src/app/services/api-service.service.ts");
+
 
 
 let SearchResultComponent = class SearchResultComponent {
-    constructor() { }
+    constructor(apiService) {
+        this.apiService = apiService;
+        this.userlist = [];
+    }
     ngOnInit() {
+        this.apiService.get().subscribe((data) => {
+            console.log(data);
+            this.userlist = data;
+        });
     }
 };
+SearchResultComponent.ctorParameters = () => [
+    { type: _services_api_service_service__WEBPACK_IMPORTED_MODULE_2__["ApiService"] }
+];
 SearchResultComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
         selector: 'app-search-result',
@@ -495,6 +512,44 @@ SearchResultComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./search-result.component.scss */ "./src/app/search-result/search-result.component.scss")).default]
     })
 ], SearchResultComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/services/api-service.service.ts":
+/*!*************************************************!*\
+  !*** ./src/app/services/api-service.service.ts ***!
+  \*************************************************/
+/*! exports provided: ApiService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ApiService", function() { return ApiService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
+
+
+
+let ApiService = class ApiService {
+    constructor(httpClient) {
+        this.httpClient = httpClient;
+        this.gitApi = 'https://api.github.com/search/users?q=users';
+    }
+    get() {
+        return this.httpClient.get(this.gitApi);
+    }
+};
+ApiService.ctorParameters = () => [
+    { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] }
+];
+ApiService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+        providedIn: 'root'
+    })
+], ApiService);
 
 
 
