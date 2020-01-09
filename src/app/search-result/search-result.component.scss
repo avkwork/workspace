@@ -1,10 +1,25 @@
 .profile-list{
     background:#fff;
-    border-radius:3px;
+    border-radius:5px;
     box-shadow: 1px 1px 1px #d8d8d8;
+    margin-bottom:15px;
     .profile-pic{
         border-radius:50%;
         background:#ccc;
+        width:100px;
+        height:100px;
+        float:left;
+        margin:15px 15px 15px 0;
+        overflow: hidden;
+        img{
+            width:100%;
+        }
+    }
+    .profile-info{
+        margin-top:15px;
+        .profile-name{
+            font-size:18px;
+        }
     }
 }
 .result-count{
