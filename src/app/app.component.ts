@@ -1,4 +1,6 @@
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component, ViewEncapsulation, OnInit } from '@angular/core';
+import { ApiService } from './services/api-service.service';
+
 
 @Component({
   selector: 'app-root',
@@ -6,6 +8,12 @@ import { Component, ViewEncapsulation } from '@angular/core';
   styleUrls: ['./app.component.scss'],
   encapsulation: ViewEncapsulation.None
 })
-export class AppComponent {
+export class AppComponent  {
   title = 'mywork';
+
+  constructor() {
+
+  }
+
+
 }

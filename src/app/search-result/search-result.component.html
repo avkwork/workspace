@@ -1,23 +1,21 @@
 <div class="container">
     <div class="row">
         <div class="col-sm-12 result-count">
-            Total Result : 
+            Total Result : {{userlist.total_count}}
         </div>
     </div>
 
-    <div class="row profile-list">
-        <div class="col-sm-12 col-lg-3 profile-pic">
-           <!-- <img src="profile.jpg"> -->
-         </div>
-         <div class="col-sm-12 col-lg-6">
-            <div class="profile-name">dfs</div>
-            <div class="profil-url">dfs</div>
-            <div class="profile-info">
-                <div>
-                <span></span>:
-                <span></span>
-               </div>
+    <div *ngFor="let user of userlist.items" class="row profile-list">
+        <div class="col-sm-12 col-lg-9">
+            <div class="profile-pic">
+               <img src="{{user.avatar_url}}">
             </div>
+            
+            <div class="profile-info">
+            <div class="profile-name">{{user.login}}</div>
+            <div class="profil-url">Profile Url: {{user.html_url}}</div>
+           
+        </div>
         </div>
         <div class="col-sm-12 col-lg-3">
             <button type="button" class="btn btn-default">Details</button>
