@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <title>Your Price Box</title>
+      <meta content=" " name="description">
+      <meta content=" " name="keywords">
+      <link rel="stylesheet" href="css/bootstrap-theme.css" />
+      <link rel="stylesheet" href="css/bootstrap.css" />
+      <link rel="stylesheet" href="css/main.css" />
+      <link rel="stylesheet" href="css/custom-bootstrap.css" />
+      <link rel="stylesheet" href="fonts/font-icon.css" />
+	  <link rel="stylesheet" href="css/jquery-ui.css">
+      <link rel="icon" href="images/favicon-16x16.png" type="image/png" sizes="16x16" >
+      <!--[if lt IE 9]> 
+      <link rel="stylesheet" href="css/main.css" />
+      <script src="js/html5shiv.js"></script>
+      <![endif]-->
+      <script type="text/javascript" src="js/main.js"></script>
+      <script type="text/javascript" src="js/bootstrap.js"></script>
+      <script type="text/javascript" src="js/responsiveCarousel.min.js"></script>
+	  <script type="text/javascript" src="js/jquery-ui.js"></script>
+   </head>
+   <body>
+      <header>
+         <div class="mainHeader">
+            <div class="container">
+               <div class="logo floatL">
+                  <a href="index.html"><img src=images/ypb-logo.png /></a>
+               </div>
+               <form class="main-search">
+                  <div class="input-group inputWithButton">
+                     <input type="text" class="form-control" placeholder="Search for product, catagory or brand">
+                     <span class="input-group-addon btn"><button type="button" class="">SEARCH</button></span>
+                  </div>
+               </form>
+               <div class="btn-group account-info">
+                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="ypbicon icon-user"></i></span>
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-right">
+                     <li><a href="#">Action</a></li>
+                     <li><a href="#">Another action</a></li>
+                     <li><a href="#">Something else here</a></li>
+                     <li role="separator" class="divider"></li>
+                     <li><a href="#">Separated link</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="subHeader">
+		 <nav class="navbar navbar-inverse">
+            <div class="container">
+               <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  </button>
+                  <div id="navbar" class="navbar-collapse collapse">
+                     <ul class="nav navbar-nav mainNav">
+                        <li><a href="index.html" class="active"><i class="ypbicon icon-menu"></i>Shop By Categary</a></li>
+                        <li><a href="wellness-providers.html">Cashback programe</a></li>
+                        <li><a href="health-seekers.html">All Contest</a></li>
+                        <li><a href="about-us.html">Testimonial</a></li>
+                        <li class="loginForm"><a href="login.html">Login</a><span>|</span><a href="register.html" class="last">Register</a></li>
+                     </ul>
+                  </div>
+                  <!--/.nav-collapse -->
+               </div>
+            </div>
+         </nav>
+         <div class="breadcrumb marginBNone">
+            <div class="container">
+               <ol class="breadcrumb marginBNone paddingNone">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Library</a></li>
+                  <li class="active">Search : "Mobile"</li>
+               </ol>
+            </div>
+         </div>
+		 
+		 </div>
+         
+		 <div class="search-header">
+            <div class="container">
+               <div class="row">
+			    <div class="col-sm-12 col-md-8 col-lg-10">
+				  <h3>Product search results for mobile  <span class="grey-text">(1652) </span></h3>
+				</div>
+				
+				<div class="col-sm-12 col-md-8 col-lg-6">
+				  <form class="form-inline floatR">
+				  <div class="form-group">
+					<label for="exampleInputName2">Sort By</label>
+					<select class="form-control">
+					  <option>Relevance</option>
+					  <option>Product Rating</option>
+					  <option>Price - Ascending</option>
+					  <option>Price - Descending</option>
+					 
+					</select>
+				  </div>
+				</form>
+				</div>
+			      
+			   </div>
+            </div>
+         </div>
+      </header>
+      <section class="container sectionLeft header-adjust" style="min-height:800px;"> 
+         <div class="left-nav filter-panel">
+            <div class="left-container">
+               <div class="panel">
+                  <div class="panel-heading">
+				     <div class="row"><div class="panel-title floatL">Order by</div> <a href="#!" class="clear-trigger">Clear</a> 
+                     <a class="floatR" role="button" data-toggle="collapse" href="#collapseExample1" aria-expanded="false" aria-controls="collapseExample">
+                     <i class="ypbicon icon-ctrl"></i>
+                     </a>
+					</div>
+                  </div>
+                  <div class="panel-body in" id="collapseExample1">
+                     <div class="radio">
+                        <label>
+                        <input type="radio" name="orderBy" value="">Relevance
+                        </label>
+                     </div>
+                     <div class="radio">
+                        <label>
+                        <input type="radio" name="orderBy" value="">Product Rating
+                        </label>
+                     </div>
+					 <div class="radio">
+                        <label>
+                        <input type="radio" name="orderBy" value="">Price - Ascending
+                        </label>
+                     </div>
+                     <div class="radio">
+                        <label>
+                        <input type="radio" name="orderBy" value="">Price - Descending
+                        </label>
+                     </div>
+                  </div>
+               </div>
+			   
+			   
+			   <div class="panel">
+                  <div class="panel-heading">
+				     <div class="row"><div class="panel-title floatL">Merchant</div> <a href="#!" class="clear-trigger">Clear</a> 
+                     <a class="floatR" role="button" data-toggle="collapse" href="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
+                     <i class="ypbicon icon-ctrl"></i>
+                     </a>
+					</div>
+                  </div>
+                  <div class="panel-body in" id="collapseExample2">
+				   <div class="checkbox">
+					  <label>
+						<input type="checkbox" value="">All 
+					  </label>
+					</div>
+                    <div class="checkbox">
+					  <label>
+						<input type="checkbox" value="">Amzon
+					  </label>
+					</div>
+					<div class="checkbox">
+					  <label>
+						<input type="checkbox" value="">Babyone
+					  </label>
+					</div>
+					<div class="checkbox">
+					  <label>
+						<input type="checkbox" value="">Flipkart
+					  </label>
+					</div>
+					<div class="checkbox">
+					  <label>
+						<input type="checkbox" value="">Greendust
+					  </label>
+					</div>
+					<div class="checkbox">
+					  <label>
+						<input type="checkbox" value="">Koovs
+					  </label>
+					</div>
+					<div class="checkbox">
+					  <label>
+						<input type="checkbox" value="">Paytm
+					  </label>
+					</div>
+					<div class="checkbox">
+					  <label>
+						<input type="checkbox" value="">Shopclues
+					  </label>
+					</div>
+					<div class="checkbox">
+					  <label>
+						<input type="checkbox" value="">Sanpdeal
+					  </label>
+					</div>
+					<div class="checkbox">
+					  <label>
+						<input type="checkbox" value="">Greendust
+					  </label>
+					</div>
+					<div class="checkbox">
+					  <label>
+						<input type="checkbox" value="">Amzon
+					  </label>
+					</div>
+					<div class="checkbox">
+					  <label>
+						<input type="checkbox" value="">Koovs
+					  </label>
+					</div>
+					
+                  </div>
+               </div>
+			   
+			   <div class="panel">
+                  <div class="panel-heading">
+				     <div class="row"><div class="panel-title floatL">Category</div> <a href="#!" class="clear-trigger">Clear</a> 
+                     <a class="floatR" role="button" data-toggle="collapse" href="#collapseExample3" aria-expanded="false" aria-controls="collapseExample">
+                     <i class="ypbicon icon-ctrl"></i>
+                     </a>
+					</div>
+                  </div>
+                  <div class="panel-body in" id="collapseExample3">
+				   <div class="checkbox">
+					  <label>
+						<input type="checkbox" value="">All 
+					  </label>
+					</div>
+                    <div class="checkbox">
+					  <label>
+						<input type="checkbox" value="">Amzon
+					  </label>
+					</div>
+					<div class="checkbox">
+					  <label>
+						<input type="checkbox" value="">Babyone
+					  </label>
+					</div>
+					<div class="checkbox">
+					  <label>
+						<input type="checkbox" value="">Flipkart
+					  </label>
+					</div>
+					<div class="checkbox">
+					  <label>
+						<input type="checkbox" value="">Greendust
+					  </label>
+					</div>
+					<div class="checkbox">
+					  <label>
+						<input type="checkbox" value="">Koovs
+					  </label>
+					</div>
+					<div class="checkbox">
+					  <label>
+						<input type="checkbox" value="">Paytm
+					  </label>
+					</div>
+					<div class="checkbox">
+					  <label>
+						<input type="checkbox" value="">Shopclues
+					  </label>
+					</div>
+					<div class="checkbox">
+					  <label>
+						<input type="checkbox" value="">Sanpdeal
+					  </label>
+					</div>
+					<div class="checkbox">
+					  <label>
+						<input type="checkbox" value="">Greendust
+					  </label>
+					</div>
+					<div class="checkbox">
+					  <label>
+						<input type="checkbox" value="">Amzon
+					  </label>
+					</div>
+					<div class="checkbox">
+					  <label>
+						<input type="checkbox" value="">Koovs
+					  </label>
+					</div>
+					
+                  </div>
+               </div>
+			   
+			   
+			   <div class="panel">
+                  <div class="panel-heading">
+				     <div class="row"><div class="panel-title floatL">Brand</div> <a href="#!" class="clear-trigger">Clear</a> 
+                     <a class="floatR" role="button" data-toggle="collapse" href="#collapseExample4" aria-expanded="false" aria-controls="collapseExample">
+                     <i class="ypbicon icon-ctrl"></i>
+                     </a>
+					</div>
+                  </div>
+                  <div class="panel-body in" id="collapseExample4">
+				   <div class="checkbox">
+					  <label>
+						<input type="checkbox" value="">All 
+					  </label>
+					</div>
+                    <div class="checkbox">
+					  <label>
+						<input type="checkbox" value="">Amzon
+					  </label>
+					</div>
+					<div class="checkbox">
+					  <label>
+						<input type="checkbox" value="">Babyone
+					  </label>
+					</div>
+					<div class="checkbox">
+					  <label>
+						<input type="checkbox" value="">Flipkart
+					  </label>
+					</div>
+					<div class="checkbox">
+					  <label>
+						<input type="checkbox" value="">Greendust
+					  </label>
+					</div>
+					<div class="checkbox">
+					  <label>
+						<input type="checkbox" value="">Koovs
+					  </label>
+					</div>
+					<div class="checkbox">
+					  <label>
+						<input type="checkbox" value="">Paytm
+					  </label>
+					</div>
+					<div class="checkbox">
+					  <label>
+						<input type="checkbox" value="">Shopclues
+					  </label>
+					</div>
+					<div class="checkbox">
+					  <label>
+						<input type="checkbox" value="">Sanpdeal
+					  </label>
+					</div>
+					<div class="checkbox">
+					  <label>
+						<input type="checkbox" value="">Greendust
+					  </label>
+					</div>
+					<div class="checkbox">
+					  <label>
+						<input type="checkbox" value="">Amzon
+					  </label>
+					</div>
+					<div class="checkbox">
+					  <label>
+						<input type="checkbox" value="">Koovs
+					  </label>
+					</div>
+					
+                  </div>
+               </div>
+			   
+			   
+			   <div class="panel">
+                  <div class="panel-heading">
+				     <div class="row"><div class="panel-title floatL">Price</div> <a href="#!" class="clear-trigger">Clear</a> 
+                     <a class="floatR" role="button" data-toggle="collapse" href="#collapseExample1" aria-expanded="false" aria-controls="collapseExample">
+                     <i class="ypbicon icon-ctrl"></i>
+                     </a>
+					</div>
+                  </div>
+                  <div class="panel-body in" id="collapseExample1">
+       
+ 
+					<div id="slider-range"></div>
+								
+					 <input type="text" id="amount">
+					
+									  </div>
+               </div>
+			   
+			   
+            </div>
+         </div>
+         <div class="main-row">
+            <div class="row">
+               <div class="col-sm-16 prod-heading">
+                  <h3>Mobile <span class="grey-text">(1652) </span></h3>
+                  <div class="show-all"><a href="#!">View All</a></div>
+               </div>
+            </div>
+            <ul class="row">
+               <li class="col-md-4 col-sm-16 col-lg-4">
+                  <div class="panel panel-default product-grid">
+                     <div class="panel-body">
+                        <img src="images\product-img-1.jpg" alt="product-img-1">
+                     </div>
+                     <div class="panel-container">
+                        <p class="product-title">Apple iPad Air 2 Wi-Fi + Cellular 16 GB Tablet</p>
+                        <p class="vendor-logo"><img src="images\vendor-logo-1.png" alt="vendor-logo-1">
+                        <p>
+                        <ul class="star">
+                           <li class="active"><i class="ypbicon icon-star-full"></i></li>
+                           <li class="active"><i class="ypbicon icon-star-full"></i></li>
+                           <li class="active"><i class="ypbicon icon-star-full"></i></li>
+                           <li class="active"><i class="ypbicon icon-star-full"></i></li>
+                           <li><i class="ypbicon icon-star-full"></i></li>
+                        </ul>
+                        <p><a href="#!">WRITE REVIEW</a></p>
+                     </div>
+                     <div class="panel-footer"> 
+                        <button type="button" class="btn btn-compare btn-block">COMPARE NOW</button>
+                     </div>
+                  </div>
+               </li>
+               <li class="col-md-4 col-sm-16 col-lg-4">
+                  <div class="panel panel-default product-grid">
+                     <div class="panel-body">
+                        <img src="images\product-img-1.jpg" alt="product-img-1">
+                     </div>
+                     <div class="panel-container">
+                        <p class="product-title">Apple iPad Air 2 Wi-Fi + Cellular 16 GB Tablet</p>
+                        <p class="vendor-logo"><img src="images\vendor-logo-2.png" alt="vendor-logo-1">
+                        <p>
+                        <ul class="star">
+                           <li class="active"><i class="ypbicon icon-star-full"></i></li>
+                           <li class="active"><i class="ypbicon icon-star-full"></i></li>
+                           <li class="active"><i class="ypbicon icon-star-full"></i></li>
+                           <li class="active"><i class="ypbicon icon-star-full"></i></li>
+                           <li><i class="ypbicon icon-star-full"></i></li>
+                        </ul>
+                        <p><a href="#!">WRITE REVIEW</a></p>
+                     </div>
+                     <div class="panel-footer"> 
+                        <button type="button" class="btn btn-compare btn-block">COMPARE NOW</button>
+                     </div>
+                  </div>
+               </li>
+               <li class="col-md-4 col-sm-16 col-lg-4">
+                  <div class="panel panel-default product-grid">
+                     <div class="panel-body">
+                        <img src="images\product-img-1.jpg" alt="product-img-1">
+                     </div>
+                     <div class="panel-container">
+                        <p class="product-title">Apple iPad Air 2 Wi-Fi + Cellular 16 GB Tablet</p>
+                        <p class="vendor-logo"><img src="images\vendor-logo-3.png" alt="vendor-logo-1">
+                        <p>
+                        <ul class="star">
+                           <li class="active"><i class="ypbicon icon-star-full"></i></li>
+                           <li class="active"><i class="ypbicon icon-star-full"></i></li>
+                           <li class="active"><i class="ypbicon icon-star-full"></i></li>
+                           <li class="active"><i class="ypbicon icon-star-full"></i></li>
+                           <li><i class="ypbicon icon-star-full"></i></li>
+                        </ul>
+                        <p><a href="#!">WRITE REVIEW</a></p>
+                     </div>
+                     <div class="panel-footer"> 
+                        <button type="button" class="btn btn-compare btn-block">COMPARE NOW</button>
+                     </div>
+                  </div>
+               </li>
+               <li class="col-md-4 col-sm-16 col-lg-4">
+                  <div class="panel panel-default product-grid">
+                     <div class="panel-body">
+                        <img src="images\product-img-1.jpg" alt="product-img-1">
+                     </div>
+                     <div class="panel-container">
+                        <p class="product-title">Apple iPad Air 2 Wi-Fi + Cellular 16 GB Tablet</p>
+                        <p class="vendor-logo"><img src="images\vendor-logo-4.png" alt="vendor-logo-1">
+                        <p>
+                        <ul class="star">
+                           <li class="active"><i class="ypbicon icon-star-full"></i></li>
+                           <li class="active"><i class="ypbicon icon-star-full"></i></li>
+                           <li class="active"><i class="ypbicon icon-star-full"></i></li>
+                           <li class="active"><i class="ypbicon icon-star-full"></i></li>
+                           <li><i class="ypbicon icon-star-full"></i></li>
+                        </ul>
+                        <p><a href="#!">WRITE REVIEW</a></p>
+                     </div>
+                     <div class="panel-footer"> 
+                        <button type="button" class="btn btn-compare btn-block">COMPARE NOW</button>
+                     </div>
+                  </div>
+               </li>
+            </ul>
+            <div class="row">
+               <div class="col-sm-16 prod-heading">
+                  <h3>Teblets <span class="grey-text">(652) </span></h3>
+                  <div class="show-all"><a href="#!">View All</a></div>
+               </div>
+            </div>
+            <ul class="row">
+               <li class="col-md-4 col-sm-16 col-lg-4">
+                  <div class="panel panel-default product-grid">
+                     <div class="panel-body">
+                        <img src="images\product-img-2.jpg" alt="product-img-1">
+                     </div>
+                     <div class="panel-container">
+                        <p class="product-title">Apple iPad Air 2 Wi-Fi + Cellular 16 GB Tablet</p>
+                        <p class="vendor-logo"><img src="images\vendor-logo-1.png" alt="vendor-logo-1">
+                        <p>
+                        <ul class="star">
+                           <li class="active"><i class="ypbicon icon-star-full"></i></li>
+                           <li class="active"><i class="ypbicon icon-star-full"></i></li>
+                           <li class="active"><i class="ypbicon icon-star-full"></i></li>
+                           <li class="active"><i class="ypbicon icon-star-full"></i></li>
+                           <li><i class="ypbicon icon-star-full"></i></li>
+                        </ul>
+                        <p><a href="#!">WRITE REVIEW</a></p>
+                     </div>
+                     <div class="panel-footer"> 
+                        <button type="button" class="btn btn-compare btn-block">COMPARE NOW</button>
+                     </div>
+                  </div>
+               </li>
+               <li class="col-md-4 col-sm-16 col-lg-4">
+                  <div class="panel panel-default product-grid">
+                     <div class="panel-body">
+                        <img src="images\product-img-2.jpg" alt="product-img-1">
+                     </div>
+                     <div class="panel-container">
+                        <p class="product-title">Apple iPad Air 2 Wi-Fi + Cellular 16 GB Tablet</p>
+                        <p class="vendor-logo"><img src="images\vendor-logo-2.png" alt="vendor-logo-1">
+                        <p>
+                        <ul class="star">
+                           <li class="active"><i class="ypbicon icon-star-full"></i></li>
+                           <li class="active"><i class="ypbicon icon-star-full"></i></li>
+                           <li class="active"><i class="ypbicon icon-star-full"></i></li>
+                           <li class="active"><i class="ypbicon icon-star-full"></i></li>
+                           <li><i class="ypbicon icon-star-full"></i></li>
+                        </ul>
+                        <p><a href="#!">WRITE REVIEW</a></p>
+                     </div>
+                     <div class="panel-footer"> 
+                        <button type="button" class="btn btn-compare btn-block">COMPARE NOW</button>
+                     </div>
+                  </div>
+               </li>
+               <li class="col-md-4 col-sm-16 col-lg-4">
+                  <div class="panel panel-default product-grid">
+                     <div class="panel-body">
+                        <img src="images\product-img-2.jpg" alt="product-img-1">
+                     </div>
+                     <div class="panel-container">
+                        <p class="product-title">Apple iPad Air 2 Wi-Fi + Cellular 16 GB Tablet</p>
+                        <p class="vendor-logo"><img src="images\vendor-logo-3.png" alt="vendor-logo-1">
+                        <p>
+                        <ul class="star">
+                           <li class="active"><i class="ypbicon icon-star-full"></i></li>
+                           <li class="active"><i class="ypbicon icon-star-full"></i></li>
+                           <li class="active"><i class="ypbicon icon-star-full"></i></li>
+                           <li class="active"><i class="ypbicon icon-star-full"></i></li>
+                           <li><i class="ypbicon icon-star-full"></i></li>
+                        </ul>
+                        <p><a href="#!">WRITE REVIEW</a></p>
+                     </div>
+                     <div class="panel-footer"> 
+                        <button type="button" class="btn btn-compare btn-block">COMPARE NOW</button>
+                     </div>
+                  </div>
+               </li>
+               <li class="col-md-4 col-sm-16 col-lg-4">
+                  <div class="panel panel-default product-grid">
+                     <div class="panel-body no_image">
+                        <img src="images\no_image.png" alt="product-img-1">
+                     </div>
+                     <div class="panel-container">
+                        <p class="product-title">Apple iPad Air 2 Wi-Fi + Cellular 16 GB Tablet</p>
+                        <p class="vendor-logo"><img src="images\vendor-logo-4.png" alt="vendor-logo-1">
+                        <p>
+                        <ul class="star">
+                           <li class="active"><i class="ypbicon icon-star-full"></i></li>
+                           <li class="active"><i class="ypbicon icon-star-full"></i></li>
+                           <li class="active"><i class="ypbicon icon-star-full"></i></li>
+                           <li class="active"><i class="ypbicon icon-star-full"></i></li>
+                           <li><i class="ypbicon icon-star-full"></i></li>
+                        </ul>
+                        <p><a href="#!">WRITE REVIEW</a></p>
+                     </div>
+                     <div class="panel-footer"> 
+                        <button type="button" class="btn btn-compare btn-block">COMPARE NOW</button>
+                     </div>
+                  </div>
+               </li>
+            </ul>
+            <div class="row">
+               <div class="col-sm-16 prod-heading">
+                  <h3>Laptos  <span class="grey-text">(162) </span></h3>
+                  <div class="show-all"><a href="#!">View All</a></div>
+               </div>
+            </div>
+            <ul class="row">
+               <li class="col-md-4 col-sm-16 col-lg-4">
+                  <div class="panel panel-default product-grid">
+                     <div class="panel-body">
+                        <img src="images\product-img-3.jpg" alt="product-img-1">
+                     </div>
+                     <div class="panel-container">
+                        <p class="product-title">Apple iPad Air 2 Wi-Fi + Cellular 16 GB Tablet</p>
+                        <p class="vendor-logo"><img src="images\vendor-logo-1.png" alt="vendor-logo-1">
+                        <p>
+                        <ul class="star">
+                           <li class="active"><i class="ypbicon icon-star-full"></i></li>
+                           <li class="active"><i class="ypbicon icon-star-full"></i></li>
+                           <li class="active"><i class="ypbicon icon-star-full"></i></li>
+                           <li class="active"><i class="ypbicon icon-star-full"></i></li>
+                           <li><i class="ypbicon icon-star-full"></i></li>
+                        </ul>
+                        <p><a href="#!">WRITE REVIEW</a></p>
+                     </div>
+                     <div class="panel-footer"> 
+                        <button type="button" class="btn btn-compare btn-block">COMPARE NOW</button>
+                     </div>
+                  </div>
+               </li>
+               <li class="col-md-4 col-sm-16 col-lg-4">
+                  <div class="panel panel-default product-grid">
+                     <div class="panel-body">
+                        <img src="images\product-img-3.jpg" alt="product-img-1">
+                     </div>
+                     <div class="panel-container">
+                        <p class="product-title">Apple iPad Air 2 Wi-Fi + Cellular 16 GB Tablet</p>
+                        <p class="vendor-logo"><img src="images\vendor-logo-2.png" alt="vendor-logo-1">
+                        <p>
+                        <ul class="star">
+                           <li class="active"><i class="ypbicon icon-star-full"></i></li>
+                           <li class="active"><i class="ypbicon icon-star-full"></i></li>
+                           <li class="active"><i class="ypbicon icon-star-full"></i></li>
+                           <li class="active"><i class="ypbicon icon-star-full"></i></li>
+                           <li><i class="ypbicon icon-star-full"></i></li>
+                        </ul>
+                        <p><a href="#!">WRITE REVIEW</a></p>
+                     </div>
+                     <div class="panel-footer"> 
+                        <button type="button" class="btn btn-compare btn-block">COMPARE NOW</button>
+                     </div>
+                  </div>
+               </li>
+               <li class="col-md-4 col-sm-16 col-lg-4">
+                  <div class="panel panel-default product-grid">
+                     <div class="panel-body">
+                        <img src="images\product-img-3.jpg" alt="product-img-1">
+                     </div>
+                     <div class="panel-container">
+                        <p class="product-title">Apple iPad Air 2 Wi-Fi + Cellular 16 GB Tablet</p>
+                        <p class="vendor-logo"><img src="images\vendor-logo-3.png" alt="vendor-logo-1">
+                        <p>
+                        <ul class="star">
+                           <li class="active"><i class="ypbicon icon-star-full"></i></li>
+                           <li class="active"><i class="ypbicon icon-star-full"></i></li>
+                           <li class="active"><i class="ypbicon icon-star-full"></i></li>
+                           <li class="active"><i class="ypbicon icon-star-full"></i></li>
+                           <li><i class="ypbicon icon-star-full"></i></li>
+                        </ul>
+                        <p><a href="#!">WRITE REVIEW</a></p>
+                     </div>
+                     <div class="panel-footer"> 
+                        <button type="button" class="btn btn-compare btn-block">COMPARE NOW</button>
+                     </div>
+                  </div>
+               </li>
+               <li class="col-md-4 col-sm-16 col-lg-4">
+                  <div class="panel panel-default product-grid">
+                     <div class="panel-body">
+                        <img src="images\product-img-3.jpg" alt="product-img-1">
+                     </div>
+                     <div class="panel-container">
+                        <p class="product-title">Apple iPad Air 2 Wi-Fi + Cellular 16 GB Tablet</p>
+                        <p class="vendor-logo"><img src="images\vendor-logo-4.png" alt="vendor-logo-1">
+                        <p>
+                        <ul class="star">
+                           <li class="active"><i class="ypbicon icon-star-full"></i></li>
+                           <li class="active"><i class="ypbicon icon-star-full"></i></li>
+                           <li class="active"><i class="ypbicon icon-star-full"></i></li>
+                           <li class="active"><i class="ypbicon icon-star-full"></i></li>
+                           <li><i class="ypbicon icon-star-full"></i></li>
+                        </ul>
+                        <p><a href="#!">WRITE REVIEW</a></p>
+                     </div>
+                     <div class="panel-footer"> 
+                        <button type="button" class="btn btn-compare btn-block">COMPARE NOW</button>
+                     </div>
+                  </div>
+               </li>
+            </ul>
+            <div class="row"><div class="centered">
+			 <span class="small-loader loader floatL"><img src="images\loader.gif" alt="loader"></span>
+			<a href="#!" class="btn btn-viewmore">View More <i class="ypbicon icon-ctrl"></i></a>
+			</div>
+			</div>
+            
+         </div>
+      </section>
+      <footer>
+         <div class="lower-footer">
+            <div class="container">
+               <div class="footerPanel col-md-4 col-sm-12 col-lg-4">
+                  <h4>Policy Info</h4>
+                  <ul>
+                     <li><a href="#">Privacy Policy</a></li>
+                     <li><a href="#">Terms of Sale</a></li>
+                     <li><a href="#">Terms of Use</a></li>
+                     <li><a href="#">Report Abuse&Take Down Policy</a></li>
+                     <li><a href="#">CSR Policy</a></li>
+                     <li><a href="#">T&C Adv./Media Communication</a></li>
+                  </ul>
+               </div>
+               <div class="footerPanel col-md-3 col-sm-12 col-lg-3">
+                  <h4>Company</h4>
+                  <ul>
+                     <li><a href="#">About Us</a></li>
+                     <li><a href="#">Core Values</a></li>
+                     <li><a href="#">Press</a></li>
+                     <li><a href="#">Careers</a></li>
+                     <li><a href="#">Blog</a></li>
+                     <li><a href="#">Sitemap</a></li>
+                  </ul>
+               </div>
+               <div class="footerPanel col-md-3 col-sm-12 col-lg-3">
+                  <h4>YPB Business</h4>
+                  <ul>
+                     <li><a href="#">YPB Gift Voucher</a></li>
+                     <li><a href="#">Sell on YPB</a></li>
+                     <li><a href="#">Media Enquiries</a></li>
+                     <li><a href="#">Be an Affiliate</a></li>
+                     <li><a href="#">Pendrives</a></li>
+                     <li><a href="#">YPB Launchpad</a></li>
+                  </ul>
+               </div>
+               <div class="footerPanel col-md-3 col-sm-12 col-lg-3">
+                  <h4>Need Help?</h4>
+                  <ul>
+                     <li><a href="#">FAQ</a></li>
+                     <li><a href="#">Contact Us</a></li>
+                  </ul>
+               </div>
+               <div class="footerPanel col-md-3 col-sm-12 col-lg-3">
+                  <h4>Stay Connected</h4>
+                  <div class="socialNet">
+                     <ul>
+                        <li><a href="#"><i class="icon-facebook"></i></a></li>
+                        <li><a href="#"><i class="icon-twitter"></i></a></li>
+                        <li><a href="#"><i class="icon-google-plus"></i></a></li>
+                        <li><a href="#"><i class="icon-youtube"></i></a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+         </div>
+         <div class="container" style="display:none;">
+            <p class="copyRightNote">Copyright @ 2016 YPB, TERMS OF USE, PRIVACY POLICY</p>
+         </div>
+      </footer>
+   </body>
+   <script>
+    
+	$(window).scroll(function() {
+	   
+        if ($(this).scrollTop() > 5) 
+           {
+             
+			 $('.subHeader').fadeOut();
+			  var headerHeight = $('header').outerHeight();
+			 $('section').css('padding-top', headerHeight );
+           }
+		else  if ($(this).scrollTop() == 0 || $(this).scrollTop() < 4) 
+		   {
+		   
+		     $('section').addClass('header-adjust'); 
+			 $('.subHeader').fadeIn();
+			 var headerHeight = $('header').outerHeight();
+			  $('section').css('padding-top', headerHeight );
+			} 
+		});
+      
+      $.fn.isVisible = function() {
+          // Current distance from the top of the page
+          var windowScrollTopView = $(window).scrollTop();
+      
+          // Current distance from the top of the page, plus the height of the window
+          var windowBottomView = windowScrollTopView + $(window).height();
+      
+          // Element distance from top
+          var elemTop = $(this).offset().top;
+      
+          // Element distance from top, plus the height of the element
+          var elemBottom = elemTop;
+      
+          return ((elemBottom <= windowBottomView));
+      }
+      
+      
+      $(document).ready(function() {
+         var sectionLeft = $('.sectionLeft').offset().left;
+         //$(".left-nav").css("left",sectionLeft);
+         
+        $(window).scroll(function() {
+              if($("footer").isVisible()) {
+                  $(".left-nav").addClass('pos-absolute');
+      			//$(".left-nav").css("left","0");
+              } else {
+                  $(".left-nav").removeClass('pos-absolute');
+      			//$(".left-nav").css("left",sectionLeft);
+      			
+              }
+          });
+      
+      $('ul.stars li').click(function(){
+       $(this).toggleClass('active');
+      });
+      
+      var headerHeight = $('header').outerHeight();
+      var windowHeight = $(window).outerHeight() - 150;
+      var mainMenuHeight =(headerHeight) + (windowHeight);
+      
+      var mainMenuWidth = $(".main-row").outerWidth();
+      
+      $('.main-menu').css('width', mainMenuWidth + 15);
+      $('.main-menu').css('height', mainMenuHeight);
+      
+      $('.crsl-items').carousel({ autoRotate: 4000, visible: 2, itemMinWidth: 300, itemMargin: 10 });
+	  $('section').css('padding-top', headerHeight );
+      });
+      
+   </script>
+    <script>
+  $(function() {
+    $( "#slider-range" ).slider({
+      range: true,
+      min: 0,
+      max: 500,
+      values: [ 75, 300 ],
+      slide: function( event, ui ) {
+        $( "#amount" ).val( "Rs " + ui.values[ 0 ] + "Rs " + ui.values[ 1 ] );
+      }
+    });
+    $( "#amount" ).val( "Rs " + $( "#slider-range" ).slider( "values", 0 ) +
+      " Rs " + $( "#slider-range" ).slider( "values", 1 ) );
+  });
+  </script>
+   
+</html>

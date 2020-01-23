@@ -1,0 +1,119 @@
+@font-face {
+    font-family: 'icomoon';
+    src:    url('icomoon.eot?d0ct4t');
+    src:    url('icomoon.eot?d0ct4t#iefix') format('embedded-opentype'),
+        url('icomoon.ttf?d0ct4t') format('truetype'),
+        url('icomoon.woff?d0ct4t') format('woff'),
+        url('icomoon.svg?d0ct4t#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.left-container .ypbicon{margin: 2px 10px 0px 0px;float: left;}
+.icon-menu{margin:-1px 5px 0 0;float: left;font-size: 16px;padding: 2px 5px 3px 6px;border-radius:3px;background:#52699C;color:#fff;}
+
+.icon-All_Offers:before {
+    content: "\e900";
+}
+.icon-Laptops_Desktops:before {
+    content: "\e901";
+}
+.icon-Mobiles_Tablets:before {
+    content: "\e902";
+}
+.icon-Camera:before {
+    content: "\e903";
+}
+.icon-Home_Entretainment:before {
+    content: "\e904";
+}
+.icon-HomeAppli:before {
+    content: "\e905";
+}
+.icon-Kitchen_Appliances:before {
+    content: "\e906";
+}
+.icon-Fashion:before {
+    content: "\e907";
+}
+.icon-Beauty:before {
+    content: "\e908";
+}
+.icon-Personal_Care:before {
+    content: "\e909";
+}
+.icon-Baby_Care:before {
+    content: "\e90a";
+}
+.icon-Fitness:before {
+    content: "\e90b";
+}
+.icon-Sports:before {
+    content: "\e90c";
+}
+.icon-Categories:before {
+    content: "\e90d";
+}
+.icon-user:before {
+    content: "\e90f";
+}
+.icon-menu:before {
+    content: "\e90e";
+}
+.icon-star-empty:before {
+    content: "\e910";
+}
+.icon-star-half:before {
+    content: "\e911";
+}
+.icon-star-full:before {
+    content: "\e912";
+}
+.icon-heart:before {
+    content: "\e913";
+}
+.icon-plus:before {
+    content: "\e914";
+}
+.icon-minus:before {
+    content: "\e915";
+}
+.icon-cross:before {
+    content: "\e916";
+}
+.icon-checkmark:before {
+    content: "\e917";
+}
+.icon-google-plus:before {
+    content: "\e918";
+}
+.icon-facebook:before {
+    content: "\e919";
+}
+.icon-twitter:before {
+    content: "\e91a";
+}
+.icon-youtube:before {
+    content: "\e91b";
+}
+.icon-ctrl:before {
+    content: "\e91c";
+}
+.icon-shopping-cart:before {
+    content: "\e91d";
+}
